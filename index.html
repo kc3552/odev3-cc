@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+
+    <title>GOOGLE..</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .header-container {
+      display: flex;
+      flex-direction: row;
+      height:50px ;
+      
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+    } 
+
+    .left {
+      margin-top: 3px;
+      margin-left: 20px;
+    }
+    .left-1 li {
+      display: inline;
+      margin: 2px;
+      padding-top: 15px;
+      padding-left: 5px;
+      font-size: 14px;
+      color: #5f6368;
+    }
+    .right {
+      margin-top: 3px;
+      margin-left: 1200px;
+    }
+
+    .right-1 li {
+      display: flex;
+      flex-direction: row;
+      float: left;
+      text-align: center;
+      margin-right: 5px;
+      font-size: 14px;
+      color: #5f6368;
+      
+    }
+    .spanli{
+
+      margin-top: 2px;
+    }
+
+
+    #google {
+      margin-left: 600px;
+      margin-top: 100px;
+    }
+
+    #box {
+      max-width: 300px;
+      position: relative;
+      margin-left: 500px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #box .fa-search {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-size: 14px;
+      color:  rgb(104, 103, 103);
+      opacity: 0.6;
+    }
+
+    #search {
+      width: 100px;
+      box-sizing: border-box;
+      border: 1px solid rgb(215, 214, 214);
+      border-radius: 10px;
+      font-size: 18px;
+      padding: 12px 20px 12px 40px;
+      -moz-transition: width 0.4s ease-in-out;
+      -o-transition: width 0.4s ease-in-out;
+      -webkit-transition: width 0.4s ease-in-out;
+      transition: width 0.4s ease-in-out;
+    }
+
+    #search:focus {
+      width: 100%;
+    }
+    #ses-img{
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index:1;
+      padding-left: 440px;
+      padding-top: 3px;
+    }
+    .fa{
+      color:rgb(215, 214, 214); ;
+    }
+    .elemanBTN{
+      display: flex;
+      flex-direction: row;
+      margin-left: 630px;
+      margin-top: 5px;
+    }
+    footer{
+
+      width: 1480px;
+      height: 25px;
+      background-color: #f2f2f2;
+      margin-left:20px ;
+      margin-right:40px ;
+      margin-top:390px ;
+      display: flex;
+      flex-direction: row;
+    }
+    .left-footer{
+      margin-right:980px ;
+    }
+    .left-footer ul li{
+      
+      padding: 3px;
+      margin-left:20px ;
+      display: inline;
+      list-style-type: none;
+      font-size: 14px;
+      color: #5f6368;
+    }
+    .right-footer ul li{
+      padding: 5px;
+      display: inline;
+      list-style-type:none ;
+      font-size: 14px;
+      color: #5f6368;
+      
+    }
+    
+  </style>
+
+  <body><!--bas kısmı-->
+    <header>
+      <div class="header-container">
+        <div class="left">
+          <ul class="left-1">
+            <li>About</li>
+            <li>Store</li>
+          </ul>
+        </div>
+        <div class="right">
+          <ul class="right-1">
+            <li><span class="spanli"> Gmail</span></li>
+            <li><span  class="spanli"> İmages</span> </li>
+            <li><span class="material-symbols-outlined"> apps </span></li>
+            <li>
+              <!--<button
+                style="
+                  width: 50px;
+                  border-radius: 10%;
+                  color: white;
+                  background-color: #1b66ca;
+                "
+              >
+                Sign in
+              </button>-->
+              <img src="img/kc.jpg" alt="profil" style="width:25px ;border-radius:50%">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!--orta bolum-->
+    <section>
+      <div id="google"><img src="img/google.png" alt="logo" /></div>
+    </section>
+    <main>
+      <form>
+        <div id="box">
+          <div class="input">
+            <input type="text" id="search" style="width: 480px; height:35px ;" />
+          </div>
+          <i class="fa fa-search" ></i>
+          <div class="img"><img id="ses-img" src="img/voicelogo.png" alt="" width="25px" />
+          </div>
+        </div>
+       
+      </form>
+      <div class="elemanBTN">
+        <button style="margin-right:5px ;border:1px solid #f2f2f2;font-family: Arial, Helvetica, sans-serif;width:100px;height:30px ;color: #5f6368;font-size:14px;">Google Search</button>
+        <button style="border:1px solid #f2f2f2
+        ;font-family: Arial, Helvetica, sans-serif;width:120px ;color: #5f6368;font-size:14px;">I'am feeling lucky</button>
+    </div>
+    </main>
+    <article></article>
+    <!--dip kısmı-->    
+    <footer>
+      <div class="left-footer">
+        <ul>
+        <li>Advertising</li>
+        <li>Business</li>
+        <li>How Search works</li>
+      </ul>
+     </div>
+     <div class="right-footer">
+      <ul>
+      <li>Privacy</li>
+      <li>Terms</li>
+      <li>Settings</li>
+     </ul>
+     </div>
+    </footer>
+    
+  </body>
+</html>
